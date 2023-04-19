@@ -51,7 +51,7 @@ Nmap done: 1 IP address (1 host up) scanned in 36.78 seconds
 └──╼ #
 ```
 <span style="color: green">
-Resposta então é <u><b>ssh</b></u>: pois e o serviço rodando na porta 2222 que e a maior porta
+Resposta então é <u><b>ssh</b></u>: pois e o serviço que esta rodando na porta 2222 que e a maior porta
 </span>
 
 ---
