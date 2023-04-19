@@ -2,7 +2,7 @@
 
 ## Active Machine Information
 ### Title: EasyCTF
-### IP Address: 10.10.199
+### IP Address: 10.10.199.129
 
 ## Answer the questions below
 
