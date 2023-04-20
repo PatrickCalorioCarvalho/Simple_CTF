@@ -328,7 +328,7 @@ if options.cracking:
 
 beautify_print()
 ```
-* Descompactanto wordlists
+* Descompactando wordlists
 ```bash
 ┌─[✗]─[patrick@parrot]─[/usr/share/wordlists]
 └──╼ $sudo gunzip /usr/share/wordlists/rockyou.txt.gz
